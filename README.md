@@ -1,6 +1,6 @@
 # cogitovirus-app
 
-Small angular app for playing with google cloud deployments and infrastructure
+Small angular app for playing around.
 
 ## Development server
 
@@ -9,6 +9,13 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Cloud deploy
+
+Run `ng build --prod`.
+Upload the yaml config and the app to the cogitovirus-app bucket. `gsutil cp -r dist/  gs://cogitovirus-app`
+Open google console. `gsutil rsync -r gs://cogitovirus-app ./cogitovirus-dist`
+Deploy `gcloud app deploy`
 
 ## Running unit tests
 
