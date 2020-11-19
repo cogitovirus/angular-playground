@@ -1,6 +1,6 @@
 # cogitovirus-app
 
-Small angular app for playing around.
+Small angular app for playing around...
 
 ## Development server
 
