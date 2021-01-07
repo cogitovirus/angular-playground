@@ -10,12 +10,22 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Cloud deploy
+## Cloud deploy with App engine
 
 Run `ng build --prod`.
 Upload the yaml config and the app to the cogitovirus-app bucket. `gsutil cp -r dist/  gs://cogitovirus-app`
 Open google console. `gsutil rsync -r gs://cogitovirus-app ./cogitovirus-dist`
 Deploy `gcloud app deploy`
+
+## Cloud deploy with cloud run
+Build an image for a dockerfile
+`docker build -t cogitovirus-app .`
+To run locally
+`docker run -p 8080:8080 cogitovirus-app`
+Containerize app and upload to Container Registry
+`gcloud builds submit --tag gcr.io/cogitovirus/cogitovirus-app`
+Deploy to Cloud Run
+`gcloud run deploy --image gcr.io/cogitovirus/cogitovirus-app --platform managed`
 
 ## Running unit tests
 
