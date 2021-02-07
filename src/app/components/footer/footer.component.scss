@@ -1,3 +1,13 @@
-p {
+p, i, .social {
     text-align: center;
+    margin-top: auto;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+  }
+  
+.fab {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
