@@ -1,11 +1,13 @@
 router-outlet {
-    padding-bottom: 3.5rem;
+    position: absolute;
+    width: 100%;
 }
 
 app-footer {
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    bottom: 1rem;
     width: 100%;
-    height: 3.5rem;
     margin-top: -3.5rem;
+    background-color: white;
 }
+

@@ -5,16 +5,19 @@
     src: local("B612"), url(./assets/fonts/B612/B612-Regular.ttf) format("truetype");
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    position: relative;
     font-family: "B612";
     margin:0em;
     height: 100%;
-    position: relative;
 }
 
 app-root {
     min-height: 100%;
     position: relative;
     display: block;
-    padding-bottom: 2.5rem;
 }
