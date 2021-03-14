@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatListModule } from '@angular/material/list';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,7 +10,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { PostsComponent } from './components/posts/posts.component';
-import { BookReportsComponent } from './components/book-reports/book-reports.component';
+import { BookReportsComponent } from './components/review-section/book-reports/book-reports.component';
+import { BookListComponent } from './components/review-section/book-list/book-list.component';
+import { BookItemComponent } from './components/review-section/book-item/book-item.component';
+import { BookReviewComponent } from './components/review-section/book-review/book-review.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +23,16 @@ import { BookReportsComponent } from './components/book-reports/book-reports.com
     HomeComponent,
     AboutComponent,
     PostsComponent,
-    BookReportsComponent
+    BookReportsComponent,
+    BookListComponent,
+    BookItemComponent,
+    BookReviewComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
