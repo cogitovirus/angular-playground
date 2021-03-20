@@ -1,7 +1,12 @@
 <div class="content">
-    <div class="book-title">{{ book.title }}</div>
-    <div class="book-author">{{ book.author }}</div>
-    <div class="book-description">{{ book.description }}</div>
-    <a clas="review-link" href="">Review</a>
+    <mat-card>
+        <mat-card-title>{{ book.title }}</mat-card-title>
+        <mat-card-subtitle>{{ book.author }}</mat-card-subtitle>
+        <mat-card-content>{{ book.description }}</mat-card-content>
+        <mat-card-footer>{{ book.rating }}/10</mat-card-footer>
+        <mat-card-actions>
+            <a mat-stroked-button href="">Review</a>
+        </mat-card-actions>
+    </mat-card>
 </div>
 

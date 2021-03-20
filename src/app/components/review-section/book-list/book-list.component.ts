@@ -11,8 +11,8 @@ export class BookListComponent implements OnInit {
 
   constructor() {
     this.books = [
-      new Book('1', "Deep Work", "Cal Newport", ""),
-      new Book('2', "Test Title", "Test Author", "Test Desc")
+      new Book('1', "Deep Work", "Cal Newport",9 , ""),
+      new Book('2', "American Kingpin: The Epic Hunt for the Criminal Mastermind Behind the Silk Road", "Nick Bilton",8 ,  "")
     ]
   }
 
