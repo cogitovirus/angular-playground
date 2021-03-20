@@ -1,17 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
-@font-face {
-    font-family: "B612";
-    src: local("B612"), url(./assets/fonts/B612/B612-Regular.ttf) format("truetype");
-}
-
 html {
     height: 100%;
 }
 
 body {
     position: relative;
-    font-family: "B612";
     margin:0em;
     height: 100%;
 }
@@ -22,4 +16,3 @@ app-root {
     display: block;
 }
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
