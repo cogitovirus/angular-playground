@@ -1,21 +1,17 @@
-.menu {
-    margin: 1em;
-    text-align: center;
+.menu-flex {
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+    height: 100%;
+
 }
 
-.menu-item {
-    padding: 0.5em;
-    padding-left: 1em;
-    padding-right: 1em;
-    font-size: 1em;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #282828;
-    transition: all 1s ease-in-out;
-    position: relative;
-
-    &:hover {
-        color: #72bcd4;
-    }
+.mat-toolbar {
+    justify-content: center;
 }
 
+// .button-flex-container {
+//     display: flex;
+//     width: 50%;
+//     justify-content: flex-end;
+//   }

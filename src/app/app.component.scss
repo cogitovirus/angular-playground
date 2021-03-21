@@ -1,6 +1,8 @@
-router-outlet {
-    position: absolute;
+.content-wrapper {
+    // max-width: 500px;
+    max-width: 40rem;
     width: 100%;
+    margin: auto;
 }
 
 app-footer {
