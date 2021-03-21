@@ -4,6 +4,6 @@
     <mat-card-content>{{ book.description }}</mat-card-content>
     <mat-card-footer>{{ book.rating }}/10</mat-card-footer>
     <mat-card-actions>
-        <a mat-stroked-button href="">Review</a>
+        <button mat-stroked-button [routerLink]="'/book-reports/' + book.id">Review</button>
     </mat-card-actions>
 </mat-card>
