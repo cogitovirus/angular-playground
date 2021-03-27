@@ -1,0 +1,25 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$cv-theme-primary: mat-palette($mat-blue-grey);
+$cv-theme-accent: mat-palette($mat-deep-purple);
+$cv-theme-warn: mat-palette($mat-red);
+
+$cv-theme: mat-light-theme((
+  color: (
+    primary: $cv-theme-primary,
+    accent: $cv-theme-accent,
+    warn: $cv-theme-warn,
+  )
+));
+
+@include angular-material-theme($cv-theme);
+
+$cv-typography: mat-typography-config(
+  $font-family: 'Lato, sans-serif',
+  $headline: mat-typography-level(24px, 48px, 700),
+  $body-1: mat-typography-level(16px, 24px, 500)
+);
+
+@include angular-material-typography($cv-typography);

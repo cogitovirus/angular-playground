@@ -1,17 +1,12 @@
+@import '~@angular/material/theming';
+
 .menu-flex {
     display: flex;
-    // justify-content: center;
-    // align-items: center;
     height: 100%;
 
 }
 
 .mat-toolbar {
     justify-content: center;
+    @include mat-elevation(2);
 }
-
-// .button-flex-container {
-//     display: flex;
-//     width: 50%;
-//     justify-content: flex-end;
-//   }
