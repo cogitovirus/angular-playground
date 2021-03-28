@@ -10,7 +10,8 @@ I've been swollowed whole by daily routine tasks. Always checking what is happen
 reading latest news or tech articles or attending meetings during which I had little to say nor cared enough about what was being said.
 As a result, I was not making tangible progress in projects that mattered. That were suppose to be the central point of my attention.
 
-"Shallow work stops you from getting fired, but deep work is what gets you promoted." - CAL NEWPORT
+> "Shallow work stops you from getting fired, but deep work is what gets you promoted."
+> Cal Newport
 
 Having my initial diagnosis, I then turned to books and articles on the topic of time manegement to find a solution.
 The one that impressed me the most, was Deep Work by Cal Newport. Written in a clear and concise fashion, it
@@ -28,7 +29,6 @@ but some of reedemed time was still going to undesirable places. The list of tin
 - getting rid of the Google Chrome gmail plugin. You don't really need to know that you got mail this instance.
 Limit the time to check your personal email to once per day
 - closing the slack app or Outlook entirely, when I need a longer span of focus
-- 
 
 This allows me to keep laser focus on the tasks, that in the long term bring the most value. The ones that 
 are the one that will bring satisfaction from your life
@@ -38,4 +38,5 @@ I don't always like listening to music while doing long stretches of work, but t
 a stake of flow, zen or hovewer you want to put it. That's how I have found this gem:
 https://open.spotify.com/playlist/1y8TGPY5GqXY9YjqKkHdIb?si=X77GirWbTXOnXYWMIE1IoA
 
-"Don't take break from distractions. Instead, take breaks from focus" - CAL NEWPORT
+>"Don't take break from distractions. Instead, take breaks from focus"
+>  Cal Newport
