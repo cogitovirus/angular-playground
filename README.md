@@ -21,6 +21,7 @@ Open google console. `gsutil rsync -r gs://cogitovirus-app ./cogitovirus-dist`
 Deploy `gcloud app deploy`
 
 ## Cloud deploy with cloud run
+### Test the buld locally
 Build an image for a dockerfile
 
 `docker build -t cogitovirus-app .`
@@ -29,13 +30,20 @@ To run locally
 
 `docker run -p 8080:8080 cogitovirus-app`
 
-Containerize app and upload to Container Registry
+### Containerize the app and upload to Container Registry
+Run the following command
 
 `gcloud builds submit --tag gcr.io/cogitovirus/cogitovirus-app`
 
-Deploy to Cloud Run
+Deploy with Cloud Run (when deploying for the first time)
 
 `gcloud run deploy --image gcr.io/cogitovirus/cogitovirus-app --platform managed`
+
+To switch prod version to the latest build:
+1. Make sure the latest build was submitted to the Container Registry
+2. Go to Cloud Run
+3. Select Edit & Deploy new revision
+4. It should pull the latest version from the registry. Alternatively, you could select the specific docker image.
 
 ## Running unit tests
 
