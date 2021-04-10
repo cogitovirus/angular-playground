@@ -21,61 +21,23 @@ export class HomeComponent implements OnInit {
     },
     particles: {
       number: {
-        value: 3,
+        value: 6,
         density: {
           enable: true,
-          area: 800
+          area: 600
         }
       },
       color: {
         value: [
-          "#3998D0",
-          "#2EB6AF",
-          "#A9BD33",
-          "#FEC73B",
-          "#F89930",
-          "#F45623",
-          "#D62E32",
-          "#EB586E",
-          "#9952CF"
+          "#264653",
+          "#2a9d8f",
+          "#e9c46a",
+          "#f4a261",
+          "#e76f51"
         ]
       },
-      destroy: {
-        mode: "split",
-        split: {
-          count: 1,
-          factor: {
-            value: 9,
-            random: {
-              enable: true,
-              minimumValue: 4
-            }
-          },
-          rate: {
-            value: 10,
-            random: {
-              enable: true,
-              minimumValue: 5
-            }
-          },
-          particles: {
-            collisions: {
-              enable: false
-            },
-            destroy: {
-              mode: "none"
-            },
-            life: {
-              count: 1,
-              duration: {
-                value: 1
-              }
-            }
-          }
-        }
-      },
       shape: {
-        type: "circle",
+        type: "polygon",
         stroke: {
           width: 0,
           color: "#000000"
@@ -95,10 +57,10 @@ export class HomeComponent implements OnInit {
         }
       },
       size: {
-        value: 15,
+        value: 12,
         random: {
           enable: true,
-          minimumValue: 10
+          minimumValue: 5
         },
         animation: {
           enable: false,
@@ -108,26 +70,51 @@ export class HomeComponent implements OnInit {
         }
       },
       lineLinked: {
-        enable: false,
+        enable: true,
         distance: 150,
-        color: "#ffffff",
-        opacity: 0.4,
+        color: "#000000",
+        opacity: 0.2,
         width: 1
       },
       collisions: {
+        bounce: {
+          horizontal: {
+            value: 2
+          },
+          vertical: {
+            value: 2
+          }
+        },
         enable: true,
-        mode: "destroy"
+        mode: "bounce"
+      },
+      rotate: {
+        random: {
+          enable: true,
+          minimumValue: 10
+        },
+        value: 90,
+        direction: "counter-clockwise",
+        animation: {
+          enable: true,
+          speed: 4,
+        }
       },
       move: {
         enable: true,
-        speed: 7,
+        speed: 4,
         direction: "none",
-        random: false,
+        random: true,
         straight: false,
         out_mode: "out",
-        attract: {
+        gravity: {
           enable: false,
-          rotateX: 600,
+          acceleration: 4,
+          maxSpeed: 8
+        },
+        attract: {
+          enable: true,
+          rotateX: 1800,
           rotateY: 1200
         }
       }
@@ -136,8 +123,8 @@ export class HomeComponent implements OnInit {
       detectsOn: "window",
       events: {
         onHover: {
-          enable: false,
-          mode: "repulse",
+          enable: true,
+          mode: "bubble",
           parallax: {
             enable: false,
             force: 60,
@@ -148,6 +135,12 @@ export class HomeComponent implements OnInit {
           enable: true,
           mode: "push"
         },
+        onDiv: {
+          enable: true,
+          mode: "repulse",
+          selectors: "#manifest",
+          type: "rectangle"
+        },
         resize: true
       },
       modes: {
@@ -157,24 +150,70 @@ export class HomeComponent implements OnInit {
             opacity: 1
           }
         },
+        connect: {
+          distance: 150,
+          radius: 150,
+          lineLinked: {
+            opacity: 0.5
+          }
+        },
         bubble: {
-          distance: 400,
-          size: 40,
-          duration: 2,
-          opacity: 0.8
+          distance: 150,
+          size: 25,
+          duration: 20,
+          opacity: 0.1
         },
         repulse: {
-          distance: 200
+          distance: 10,
+          duration: 10
         },
         push: {
-          particles_nb: 1
+          quantity: 1
         },
         remove: {
-          particles_nb: 2
+          quantity: 1
         }
       }
     },
+    infection: {
+      enable: true,
+      delay: 1,
+      cure: false,
+      infections: 1,
+      stages: [
+        {
+          color: "#e01e37",
+          duration: 30,
+          rate: 1,
+          radius: 1
+        },
+        {
+          color: "#da1e37",
+          duration: 30,
+          rate: 1,
+          radius: 1
+        },
+        {
+          color: "#c71f37",
+          duration: 30,
+          rate: 2,
+          radius: 2
+        },
+        {
+          color: "#bd1f36",
+          duration: 30,
+          rate: 2,
+          radius: 2
+        },
+        {
+          color: "#b21e35",
+          duration: 30,
+          rate: 3,
+          radius: 3
+        }
+      ]
+
+    },
     detectRetina: true
   }
-
 }
