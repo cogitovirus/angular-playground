@@ -22,9 +22,11 @@
     "@angular/platform-browser-dynamic": "~11.2.6",
     "@angular/router": "~11.2.6",
     "express": "^4.17.1",
+    "ng-particles": "^2.9.1",
     "ngx-markdown": "^11.1.2",
     "rxjs": "~6.6.6",
     "tslib": "^2.0.0",
+    "tsparticles": "^1.26.1",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {

@@ -7,6 +7,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MarkdownModule } from 'ngx-markdown';
 import { HttpClient, HttpClientModule } from '@angular/common/http'
+import { NgParticlesModule } from "ng-particles";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -42,7 +43,8 @@ import { BookReviewComponent } from './components/review-section/book-review/boo
     MatButtonModule,
     MatToolbarModule,
     HttpClientModule,
-    MarkdownModule.forRoot({ loader: HttpClient })
+    MarkdownModule.forRoot({ loader: HttpClient }),
+    NgParticlesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
