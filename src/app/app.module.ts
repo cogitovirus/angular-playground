@@ -5,6 +5,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
 import { MarkdownModule } from 'ngx-markdown';
 import { HttpClient, HttpClientModule } from '@angular/common/http'
 import { NgParticlesModule } from "ng-particles";
@@ -40,6 +41,7 @@ import { BookReviewComponent } from './components/review-section/book-review/boo
     BrowserAnimationsModule,
     MatListModule,
     MatCardModule,
+    MatIconModule,
     MatButtonModule,
     MatToolbarModule,
     HttpClientModule,
