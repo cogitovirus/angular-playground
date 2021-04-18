@@ -17,7 +17,7 @@ export class AppComponent {
   ) {
     this.matIconRegistry.addSvgIcon(
       "cogitovirus",
-      this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/logo/cv_logo.svg")
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/logo/cv_logo_black.svg")
     );
   }
 }
