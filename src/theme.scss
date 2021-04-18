@@ -6,8 +6,10 @@ $cv-theme-primary: mat-palette($mat-blue-gray, A200, A100, A400);
 $cv-theme-accent: mat-palette($mat-deep-purple);
 $cv-theme-warn: mat-palette($mat-red);
 $cv-background-color: #ffffff;
+$cv-text-color: rgba(0, 0, 0, 0.7);
 
 $mat-light-theme-background: map_merge($mat-light-theme-background, (background: $cv-background-color));
+$mat-light-theme-foreground: map-merge($mat-light-theme-background, (text: $cv-text-color));
 
 
 $cv-theme: mat-light-theme((
@@ -18,12 +20,13 @@ $cv-theme: mat-light-theme((
   )
 ));
 
-@include angular-material-theme($cv-theme);
-
 $cv-typography: mat-typography-config(
-  $font-family: 'Lato, sans-serif',
+  $font-family: 'Noto Serif, serif',
   $headline: mat-typography-level(24px, 48px, 700),
-  $body-1: mat-typography-level(18px, 24px, 500)
+  $body-1: mat-typography-level(16px, 22px, 500),
+
 );
 
 @include angular-material-typography($cv-typography);
+@include angular-material-theme($cv-theme);
+
