@@ -47,7 +47,7 @@ export class HomeComponent implements OnInit {
         }
       },
       opacity: {
-        value: 1,
+        value: 0.6,
         random: false,
         animation: {
           enable: false,
@@ -102,7 +102,7 @@ export class HomeComponent implements OnInit {
       },
       move: {
         enable: true,
-        speed: 4,
+        speed: 2,
         direction: "none",
         random: true,
         straight: false,

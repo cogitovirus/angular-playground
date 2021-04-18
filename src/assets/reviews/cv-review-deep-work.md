@@ -14,9 +14,9 @@ As a result, I was not making tangible progress in projects that mattered. Those
 Having my initial diagnosis, I then turned to books and articles on the topic of time management to find a solution. The one that impressed me the most, was Deep Work by Cal Newport. Written clearly and concisely, it describes the concept of deep work - an ability to concentrate on a cognitively difficult task without distractions. This allows you to achieve better results in a shorter time and what's most important, creates a sense of fulfillment from completing your goals.
 
 Let's examine the deep work essence, in the opposition to shallow work.
->>**Deep Work**: “Professional activities performed in a state of distraction-free concentration that pushes your cognitive capabilities to their limit. These efforts create new value, improve your skill, and are hard to replicate.”
+> **Deep Work**: “Professional activities performed in a state of distraction-free concentration that pushes your cognitive capabilities to their limit. These efforts create new value, improve your skill, and are hard to replicate.”
 
->>**Shallow Work**: “Non-cognitively demanding, logistical-style tasks often performed while distracted. These efforts tend to not create much new value in the world and are easy to replicate.”
+> **Shallow Work**: “Non-cognitively demanding, logistical-style tasks often performed while distracted. These efforts tend to not create much new value in the world and are easy to replicate.”
 
 What's also valuable in the book itself to me, is that it is free from any cheap philosophies or coaching, which is common even in the highest-rated classics on managing yourself.
 

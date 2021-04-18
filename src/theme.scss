@@ -2,9 +2,13 @@
 
 @include mat-core();
 
-$cv-theme-primary: mat-palette($mat-blue-grey);
+$cv-theme-primary: mat-palette($mat-blue-gray, A200, A100, A400);
 $cv-theme-accent: mat-palette($mat-deep-purple);
 $cv-theme-warn: mat-palette($mat-red);
+$cv-background-color: #ffffff;
+
+$mat-light-theme-background: map_merge($mat-light-theme-background, (background: $cv-background-color));
+
 
 $cv-theme: mat-light-theme((
   color: (
